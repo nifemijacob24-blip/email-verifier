@@ -63,7 +63,7 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-items: center;
+
 
 
 }
@@ -75,6 +75,7 @@ h3{
     justify-self: center;
     width: 70vw;
     margin-left: 6vw;
+    
     
     
 }
@@ -254,7 +255,7 @@ align-items: center;
 height: max-content;
 min-height: 450px;
 width: 100vw;
-border-radius: 5px;
+border-radius: 20px;
 
 
 }
