@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Email Verifier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+     <meta name="description" content="Find almost anyone's  email address, even if the email address that you are looking isn't publicly available. Connect with more people and make more sales.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header"> <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="https://leadrnk.com/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <svg class="bi me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg> <span class="fs-4">Lead Rank</span> </a> <ul class="nav nav-pills"> <li class="nav-item"><a href="https://leadrnk.com/" class="nav-link active" aria-current="page">Home</a></li> <li class="nav-item"><a href="https://leadrnk.com/tool" class="nav-link">Tool</a></li> <li class="nav-item"><a href="https://leadrnk.com/#blog" class="nav-link">Blogs</a></li> <li class="nav-item"><a href="https://leadrnk.com/about" class="nav-link">About</a></li><li class="nav-item"> </header> 
+
+    <div class="con">
+        <section class="tool">
+            <h1 style="color: aliceblue;">Free Email Finder Tool</h1><br>
+            <p style="color: aliceblue;">Find almost anyone's  email address, even if the email address that you are looking isn't publicly available. Connect with more people and make more sales.</p><br>
+            <form method="POST" action="/find" class="form">
+                <input type="text" name="fName" placeholder="First name"  required>                
+                <input type="text" name="mName" placeholder="middle name"  >
+                <input type="text" name="lName" placeholder="Last name"  required>
+                <input type="text" name="domain" title="Please enter a valid domain like google.com (no http:// or www)" pattern="^([a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]\.)+[a-zA-Z]{2,}$" placeholder="company.com"  required><br>
+                <input id="button" value="Find Email" type="submit" style="background-color: orange;color: aliceblue; height: 40px;"><br>
+            </form>
+            <% if(locals.validEmails) {%>
+                <div>
+                
+                <h3 style="text-align: center;color: aliceblue;">Emails found:</h3>
+                <ul style="text-align: center;color: aliceblue;list-style-type: none;">
+                    <% validEmails.forEach(function(item) { %>
+                        <li><%= item.email %></li> 
+                    <% }); %>
+                </ul>
+                </div>
+                
+            <% } %>
+
+        </section>
+        <h2 style="text-align: center; margin-top: 30px;">FAQ </h2>
+<section class="faq">
+    <div class="top">
+        <h3 style="text-align: left;">Is this tool really free?</h3>
+        <img src= "./images/caret-down.svg" class="dropdown1">
+    </div>
+
+    <div class="down1">
+        <p style="color: black;">Yes. Unlike other email finders that limit you to 50 credits and then ask for a credit card, this tool is 100% free forever. There are no daily limits, no paywalls, and no sign-up required.</p>
+    </div>
+    <div class="top">
+        <h3 style="text-align: left;">How does it find the correct email?</h3>
+        <img src= "./images/caret-down.svg" class="dropdown2" >
+    </div>
+
+    <div class="down2">
+        <p>We use the "Permutation + Validation" method. The tool generates the most common corporate email formats (like john.doe@company.com) and performs a live check with the mail server to identify which specific format is active and real.</p>
+        
+    </div>
+    <div class="top">
+        <h3 style="text-align: left;">Why does the search take 20-40 seconds?</h3>
+        <img src= "./images/caret-down.svg" class="dropdown3">
+    </div>
+
+    <div class="down3"><p>We verify emails in real-time rather than using a stale database. The tool is actively communicating with the company's mail server to confirm the email exists before showing it to you. A few seconds of waiting ensures you get accurate data, not guesses.</p></div>
+</section>
+
+<h2 style="text-align: center; margin-top: 80px;" >Related Blog post</h2></br>
+    <div  class="latest_blog" id="blog">
+        <div class="blog">
+            <a href="https://leadrnk.com/email-marketing-guide"><img class="blog_img" src="./images/image-with-email-marking-text.png" alt="image with email marketing text">
+            <h3>B2B Email Marketing: Strategies And Tips(2026)</h3></a>
+        </div></br>
+        <div class="blog">
+            <a href="https://leadrnk.com/b2b-lead-generation"><img class="blog_img" src="./images/b2b-lead-generation.webp" alt="b2b lead generation banner image">
+            <h3>B2B Lead Generation 2026 Guide</h3></a>
+        </div>
+    </div>
+
+
+    </div>
+    <div class="footer"> <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"> <div class="col-md-4 d-flex align-items-center"> <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> <svg class="bi" width="30" height="24" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg> </a> <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Leadrnk, Inc</span> </div> <ul class="nav col-md-4 justify-content-end list-unstyled d-flex"> <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#instagram"></use></svg></a></li> <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li> </ul> </footer> </div>
+    <script>
+    const form = document.querySelector('form');
+    const domainInput = document.querySelector('input[name="domain"]');
+
+    form.addEventListener('submit', (e) => {       
+        const button = document.getElementById('button')
+
+        const value = domainInput.value.trim();
+        
+
+
+        // Rule 1: Must contain a dot
+        if (!value.includes('.')) {
+            e.preventDefault(); // STOP the form
+            alert("A domain name must have an extension (like .com or .io)");
+            return;
+        }
+
+        // Rule 2: No spaces allowed
+        if (value.includes(' ')) {
+            e.preventDefault(); // STOP the form
+            alert("Domain names cannot have spaces.");
+            return;
+        }
+
+        // Rule 3: No http:// or https://
+        if (value.startsWith('http://') || value.startsWith('https://')) {
+            e.preventDefault(); // STOP the form
+            alert("Please remove 'http://' or 'https://'. Just type the name (e.g. google.com)");
+            return;
+        }
+
+        button.disabled=true;
+        const messages = [
+            "Connecting to SMTP server...",
+            "Verifying email patterns...",
+            "Filtering invalid addresses...",
+            "Almost there, checking final matches..."
+        ];
+        let i = 0;
+        
+        if (button.tagName === 'INPUT') {
+            button.value = messages[0];
+
+            setInterval(() => {
+            if (i < messages.length) {
+                button.value = messages[i];
+                i++;
+            }
+        }, 10000); // Change text every 10 seconds
+    
+        } else {
+            button.innerText = 'Processing...';
+        }
+
+        // 2. RE-ENABLE LATER (After 2 minutes)
+        setTimeout(() => {
+            button.disabled = false;
+            
+            // Reset text
+            if (button.tagName === 'INPUT') {
+                button.value = 'Search';
+            } else {
+                button.innerText = 'Search';
+            }
+            
+        }, 120000);
+
+        
+        
+    });
+</script>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</html>

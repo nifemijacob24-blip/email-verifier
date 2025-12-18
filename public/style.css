@@ -1,0 +1,273 @@
+
+h1{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:bolder;
+  font-style: normal;
+
+
+}
+h2{
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size:xx-large;
+  font-weight:600;
+
+}
+h3{
+  font-family: "Inter", sans-serif;
+  font-size:x-large;
+  font-weight: 500;
+}
+
+.hero{
+  background-color: rgb(28, 28, 156);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 450px;
+  width: 100%;
+
+
+}
+.hero h2{
+    font-family: 'inter', Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 20px;
+    align-self: start;
+}
+.hero_image{
+    align-self: center;
+    height: 200px;
+    margin-top: 30px;
+    justify-self: center;
+}
+.hero a{
+  justify-self: center;
+  align-self: center;
+}
+.cta{
+    color: white;
+    align-self: center;
+    background-color: #22C55E;
+    width: 120px;
+    height: 40px;
+    justify-self: center;
+
+}
+
+.latest_blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+
+
+}
+.blog{
+  margin-top: 20px;
+}
+.blog_img{
+    align-self: center;
+    justify-self: center;
+    width: 70vw;
+    margin-left: 6vw;
+    
+    
+}
+.blog{
+  justify-self: center;
+  align-self: center;
+}
+.latest_blog h3{
+    align-self: center;
+    justify-self: center;
+}
+
+.Calculator{
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+ 
+
+
+}
+.blog h3{
+  text-align: center;
+}
+.Calculator button{
+
+  margin-top: 20px;
+  align-self: center;
+  background-color:  rgb(13 110 253);
+  color: white;
+
+}
+#email-calculator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#email-calculator h1,p{
+  justify-self: center;
+  margin-left: 20px;
+  align-self: center;
+
+  
+}
+.Calculator #result{
+  justify-content: center;
+  align-self: center;
+
+
+}
+#email-calculator h2{
+  margin-left: 50px;
+}
+body{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.free-tool img{
+  width: 40vw;
+  float: right;
+    
+}
+.free-tool h2{
+  text-align: center;
+}
+.free-tool{
+  display: flex;
+  padding-top: 80px;
+
+}
+#email-calculator p{
+  color: black;
+}
+.free-tool div{
+  align-self:center;
+  padding-right: 5vw;
+  text-align: left;
+
+
+}
+.free-tool p{
+  color: black;
+  text-align: left;
+}
+.free-tool button{
+  margin-top: 20px;
+  width: 100px;
+  background-color: rgb(13 110 253);
+  color: aliceblue;
+}
+#email-calculator p{
+  text-align: left;
+}
+@media (max-width:650px) {
+.free-tool img{
+  width: 0;
+  
+
+}
+.top h3{
+  font-size: large;
+}
+}
+.faq .top{
+ border: 3px solid rgb(13 110 253);
+  height: fit-content;
+  background-color:white;
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+.faq{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.faq .top h3{
+  margin-left: 3vw;
+}
+.faq .top img{
+  height: 3rem;
+}
+.faq .down1,.down2,.down3{
+ border: 3px solid rgb(13 110 253);
+  height: fit-content;
+  background-color:white;
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.down2{
+display: block;
+  
+}
+.content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.content p,h3,ul,strong,ol{
+  align-self: flex-start;
+}
+.content img{
+  width: 80vw;
+
+}
+
+.author{
+  display: flex;
+  align-content: center;
+
+}
+.author img{
+  width: 3rem;;
+
+}
+.author h3{
+  color:gray;
+  text-align: center;
+}
+.tool{
+  background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(circle at center center, rgb(13 110 253), #e5e5f7), repeating-radial-gradient(circle at center center, rgb(13 110 253), rgb(13 110 253), 10px, transparent 20px, transparent 10px);
+background-blend-mode: multiply;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: max-content;
+min-height: 450px;
+
+
+}
+input{
+  display: block;
+  width: 80vw;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
