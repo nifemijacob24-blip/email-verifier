@@ -11,6 +11,9 @@
      <meta name="description" content="Find almost anyone's  email address, even if the email address that you are looking isn't publicly available. Connect with more people and make more sales.">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="email permutator, free email finder, email verifier, bulk email check, osint tool">
+    
+    <meta name="author" content="Jacob Nifemi">
 </head>
 <body>
     <div class="header"> <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="https://leadrnk.com/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <svg class="bi me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg> <span class="fs-4">Lead Rank</span> </a> <ul class="nav nav-pills"> <li class="nav-item"><a href="https://leadrnk.com/" class="nav-link active" aria-current="page">Home</a></li> <li class="nav-item"><a href="https://leadrnk.com/tool" class="nav-link">Tool</a></li> <li class="nav-item"><a href="https://leadrnk.com/#blog" class="nav-link">Blogs</a></li> <li class="nav-item"><a href="https://leadrnk.com/about" class="nav-link">About</a></li><li class="nav-item"> </header> 
@@ -27,10 +30,10 @@
                 <input id="button" value="Find Email" type="submit" style="background-color: orange;color: aliceblue; height: 40px;"><br>
             </form>
             <% if(locals.validEmails) {%>
-                <div>
+                <div style="background-color: aliceblue;border: 5px orange solid; min-height: 10px;">
                 
-                <h3 style="text-align: center;color: aliceblue;">Emails found:</h3>
-                <ul style="text-align: center;color: aliceblue;list-style-type: none;">
+                <h3 style="text-align: center;color: grey;">Emails found:</h3>
+                <ul style="text-align: center;color: grey;list-style-type: none;">
                     <% validEmails.forEach(function(item) { %>
                         <li><%= item.email %></li> 
                     <% }); %>
